@@ -10,6 +10,12 @@ public:
   int a();
   int b();
 
+  MyClass sum(MyClass add);
+  MyClass sub(MyClass subs);
+
+  MyClass sum(int add);
+  MyClass sub(int subs);
+
   MyClass();
   MyClass(int ia, int ib);
   MyClass(const MyClass& model);

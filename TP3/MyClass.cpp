@@ -1,5 +1,33 @@
 #include "MyClass.h"
 
+
+MyClass MyClass::sum(MyClass add)
+{
+  MyClass sum_obj(this->a_+add.a_,this->b_+add.b_);
+  return sum_obj;
+}
+
+MyClass MyClass::sub(MyClass subs)
+{
+  MyClass sub_obj(this->a_-subs.a_,this->b_-subs.b_);
+  return sub_obj;
+}
+
+MyClass MyClass::sum(int add)
+{
+  MyClass sum_obj(this->a_+add,this->b_+add);
+  return sum_obj;
+}
+
+MyClass MyClass::sub(int subs)
+{
+  MyClass sub_obj(this->a_-subs,this->b_-subs);
+  return sub_obj;
+}
+
+
+
+
 MyClass::MyClass()
 {
   a_ = 1;
