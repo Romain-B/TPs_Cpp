@@ -2,17 +2,18 @@
 
 int main()
 {
-  char a='b';
-  char* p=&a;
-  char* p2;
-  char poub ;
+  int x, y, min, max;
 
-  printf("\np* : %c\n", *&*&*&*&*&*&*&*&*&*&a);
-  while(1)
-  {
-    printf("\nEntrer p2 : \n");
-    scanf("%p%*c",&p2);
-    printf("\nP :\t %p\n", p2);
-  }
+  //printf("\nDonnez un 1er entier et un 2e entier ainsi : x,y:\n");
+  //scanf("%d,%d",&x,&y);
+
+  //minmax(x,y,&min,&max);
+  //printf("\n Le plus grand entier est : %d\n\n", max);
+
+
+  int truc = chance("31 décembre 1997");
+
+  //printf("\nICI : %s\n", truc);
+
   return 0;
 }

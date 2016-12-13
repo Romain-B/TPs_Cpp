@@ -5,7 +5,7 @@ using std::endl;
 
 int main(int argc, char* argv[])
 {
-  int i=0 ;
+  int i;
   int b = 12;
   for ( i=0 ; i<6 ; i++)
   {

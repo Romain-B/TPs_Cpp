@@ -3,7 +3,7 @@
 int factr(int a) //fonction factorielle récursive
 {
   int res = 1;
-  if(0 != a-1)
+  if(0 < a-1)
   {
     res *= factr(a-1);
   }
