@@ -15,5 +15,7 @@ int main()
 
   //printf("\nICI : %s\n", truc);
 
+  printf("\nPOUETTE : %s\n", reverse("POUETTE") );
+
   return 0;
 }

@@ -67,3 +67,19 @@ int chance(char ddn[] ) // Sous la forme jj mois aaaa
 
 }
 
+char* reverse(char * mot)
+{
+  int len = sizeof(mot)/sizeof(mot[0]);
+
+  char* rev;
+  rev = new char[len];
+
+  for (int i = 0; i < len; ++i)
+  {
+    rev[len-(i+2)] = mot[i];
+  }
+
+  return rev;
+
+}
+
