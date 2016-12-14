@@ -11,7 +11,7 @@ int main()
   //printf("\n Le plus grand entier est : %d\n\n", max);
 
 
-  int truc = chance("31 décembre 1997");
+  int truc = chance("30 janvier 1995");
 
   //printf("\nICI : %s\n", truc);
 

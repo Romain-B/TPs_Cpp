@@ -28,7 +28,7 @@ int chance(char ddn[] ) // Sous la forme jj mois aaaa
   int i,j ;
   int tmp;
 
-  for (i=0;i< sizeof(mois)/sizeof(mois[0]); ++i)
+  for (i=0; i < sizeof(mois)/sizeof(mois[0]); ++i)
   {
     if (strcmp(mo_c, mois[i]) == 0)
     {
@@ -41,17 +41,21 @@ int chance(char ddn[] ) // Sous la forme jj mois aaaa
     mot_i = mot_i-10+1;
   }
   int total = mot_i;
+
+
   for (i=0; i<2 ;++i)
   {
     total += jo[i]-'0';
   }
+
+
   for (i=0; i<4 ; ++i)
   {
     total += an[i]-'0';
   }
 
   
-  if (total/10 > 0)
+  while (total/10 > 0)
   {
     tmp = total%10;
     total = total/10 + tmp;
@@ -62,3 +66,4 @@ int chance(char ddn[] ) // Sous la forme jj mois aaaa
   return 0;
 
 }
+
